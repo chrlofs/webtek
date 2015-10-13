@@ -1,0 +1,75 @@
+body {
+	/*bakgrunnen*/
+	background: #CCE1F2;
+	font-family: "Open Sans", helvetica, sans-serif;
+	margin-left: auto;
+    margin-right: auto;
+    width: 851px;
+}
+
+header {
+	/*topp*/
+    width: 851px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#menu {
+	/*meny*/
+	padding-bottom: 10px;
+}
+
+ul {
+	/*menyliste*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+hr {
+    margin: 5px;
+}
+#main {
+	/*hovedinhold*/
+	background: #FFFFFF;
+    border: 1px transparent black;
+	font-family: "Open Sans", helvetica, sans-serif;
+	margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    padding: 10px;
+}
+
+a:link {
+	/*ubesøkt lenke*/
+    color: #336699;
+    text-decoration: none;
+}
+
+a:visited {
+	/* besøkt lenke */
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+	/*hovere over lenke*/
+    color: #66CCFF;
+    text-decoration: none;
+}
+
+a:active {
+	/*valgt lenke*/
+    color: #003366;
+    text-decoration: none;
+}
+footer {
+	/*bunn*/
+	width: 851px;
+	font-size: 10px;
+	text-align: center;
+}
