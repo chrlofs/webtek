@@ -20,6 +20,11 @@ header {
 	padding-bottom: 10px;
 }
 
+#mindre_overskrift {
+    font-weight: bold;
+    font-size: 15px;
+}
+
 ul {
 	/*menyliste*/
     list-style-type: none;
