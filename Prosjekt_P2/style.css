@@ -20,6 +20,10 @@ header {
 	padding-bottom: 10px;
 }
 
+#menu > ul > li {
+    display: inline;
+}
+
 #mindre_overskrift {
     font-weight: bold;
     font-size: 15px;
@@ -32,9 +36,7 @@ ul {
     padding: 0;
 }
 
-li {
-    display: inline;
-}
+
 hr {
     margin: 5px;
 }
@@ -47,6 +49,10 @@ hr {
     margin-right: auto;
     width: 750px;
     padding: 10px;
+}
+
+#groups > li {
+    display: inline;
 }
 
 a:link {
