@@ -60,7 +60,7 @@ hr {
     padding: 0;
 }
 
-#dagensGiphy {
+#randomGiphy {
     background: #FFFFFF; 
     font-family: "Open Sans", helvetica, sans-serif;
     float: left;
@@ -70,7 +70,7 @@ hr {
     display: inline-block;
 }
 
-#dagensGiphy > img {
+#randomGiphy > img {
     display: block;
     margin: 0 auto;
 }
