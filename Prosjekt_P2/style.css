@@ -40,6 +40,7 @@ ul {
 hr {
     margin: 5px;
 }
+
 #main {
 	/*hovedinhold*/
 	background: #FFFFFF;
@@ -50,6 +51,40 @@ hr {
     width: 750px;
     padding: 10px;
 }
+
+#extraContent {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 770px;
+    padding: 0;
+}
+
+#dagensGiphy {
+    background: #FFFFFF; 
+    font-family: "Open Sans", helvetica, sans-serif;
+    float: left;
+    width: 270px;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+#dagensGiphy > img {
+    display: block;
+    margin: 0 auto;
+}
+
+#randomFunFact {
+    background: #FFFFFF; 
+    font-family: "Open Sans", helvetica, sans-serif;
+    float: right;
+    width: 450px;
+    padding: 10px;
+    display: inline-block;
+}
+
+
 
 #groups > li {
     display: inline;
