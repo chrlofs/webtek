@@ -5,7 +5,7 @@ var xmlHttp = new XMLHttpRequest()
 
 xmlHttp.open("get", url, true)
 xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*');
-xmlHttp.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+xmlHttp.setRequestHeader('Access-Control-Allow-Methods', '*');
 xmlHttp.send()
 
 xmlHttp.onreadystatechange = function() {
