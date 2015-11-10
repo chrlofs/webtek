@@ -4,6 +4,7 @@ var url = "http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Studentersamfun
 var xmlHttp = new XMLHttpRequest()
 
 xmlHttp.open("get", url, true)
+xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
 xmlHttp.send()
 
 xmlHttp.onreadystatechange = function() {
