@@ -40,6 +40,7 @@ ul {
 hr {
     margin: 5px;
 }
+
 #main {
 	/*hovedinhold*/
 	background: #FFFFFF;
@@ -49,6 +50,70 @@ hr {
     margin-right: auto;
     width: 750px;
     padding: 10px;
+}
+
+#extraContent {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 770px;
+    padding: 0;
+}
+
+#randomGiphy {
+    background: #FFFFFF; 
+    font-family: "Open Sans", helvetica, sans-serif;
+    float: left;
+    width: 300px;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+#randomGiphy > img {
+    display: block;
+    margin: 0 auto;
+}
+
+#weatherData {
+    background: #FFFFFF; 
+    font-family: "Open Sans", helvetica, sans-serif;
+    float: right;
+    width: 420px;
+    padding: 10px;
+    display: inline-block;
+    line-height: 6px;
+    text-align: center;
+}
+
+#weatherData img {
+    margin-bottom: -15px;
+}
+
+#contactForm input, #contactForm #text {
+    display: block;
+    width: 400px;
+    border: 1px solid #CCCCCC;
+    padding: 3px;
+    font-size: 16px;
+    margin-top: 3px;
+    font-family: "Open Sans", helvetica, sans-serif;
+}
+
+#send {
+    border: 1px solid #CCC;
+    margin-left: 350px;
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    margin-top: 3px;
+}
+
+#contactForm #text {
+    height: 100px;
+    resize: none;
+    overflow-y: auto;
 }
 
 #groups > li {
