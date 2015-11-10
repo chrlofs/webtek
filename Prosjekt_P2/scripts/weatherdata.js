@@ -4,8 +4,11 @@ var url = "http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Studentersamfun
 var xmlHttp = new XMLHttpRequest()
 
 xmlHttp.open("get", url, true)
-xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*');
-xmlHttp.setRequestHeader('Access-Control-Allow-Methods', '*');
+xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*')
+xmlHttp.setRequestHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+xmlHttp.setRequestHeader("Access-Control-Allow-Methods","POST, GET, OPTIONS, DELETE, PUT, HEAD")
+xmlHttp.setRequestHeader("Access-Control-Max-Age","1728000")  
+
 xmlHttp.send()
 
 xmlHttp.onreadystatechange = function() {
