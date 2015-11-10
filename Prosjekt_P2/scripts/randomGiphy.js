@@ -1,5 +1,6 @@
 //Creating a new image object and fetching the randomgiphy element from HTML 
 var gif = new Image
+gif.style.maxWidth = "250px"
 var randomGiphy = document.getElementById("randomGiphy")
 
 //Create a new XMLHttlRequest
@@ -20,8 +21,17 @@ xmlhttp.onreadystatechange = function() {
 		//Parsing jsondata from site into jsonObject
 		jsonObject = JSON.parse(xmlhttp.responseText)
 		//Get a fixed link holding a 200px width gif from the json data, set src on gif to this link
-		gif.src = jsonObject["data"]["fixed_width_downsampled_url"]
-		//Appending the gif to site
-		randomGiphy.appendChild(gif)
+		if(jsonObject["data"]) {
+			gif.src = jsonObject["data"]["image_url"]	
+			//Appending the gif to site
+			randomGiphy.appendChild(gif)
+		} else {
+			var error = document.createElement("p")
+			var text = document.createTextNode("Too many connections")
+			error.appendChild(text)
+			randomGiphy.appendChild(error)
+		}
+		
+		
 	} 
 }

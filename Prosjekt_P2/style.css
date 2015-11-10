@@ -64,7 +64,7 @@ hr {
     background: #FFFFFF; 
     font-family: "Open Sans", helvetica, sans-serif;
     float: left;
-    width: 270px;
+    width: 300px;
     padding: 10px;
     padding-bottom: 30px;
     display: inline-block;
@@ -75,13 +75,19 @@ hr {
     margin: 0 auto;
 }
 
-#randomFunFact {
+#weatherData {
     background: #FFFFFF; 
     font-family: "Open Sans", helvetica, sans-serif;
     float: right;
-    width: 450px;
+    width: 420px;
     padding: 10px;
     display: inline-block;
+    line-height: 6px;
+    text-align: center;
+}
+
+#weatherData img {
+    margin-bottom: -15px;
 }
 
 #contactForm input, #contactForm #text {
