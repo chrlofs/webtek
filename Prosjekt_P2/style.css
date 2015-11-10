@@ -84,7 +84,31 @@ hr {
     display: inline-block;
 }
 
+#contactForm input, #contactForm #text {
+    display: block;
+    width: 400px;
+    border: 1px solid #CCCCCC;
+    padding: 3px;
+    font-size: 16px;
+    margin-top: 3px;
+    font-family: "Open Sans", helvetica, sans-serif;
+}
 
+#send {
+    border: 1px solid #CCC;
+    margin-left: 350px;
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    margin-top: 3px;
+}
+
+#contactForm #text {
+    height: 100px;
+    resize: none;
+    overflow-y: auto;
+}
 
 #groups > li {
     display: inline;

@@ -22,11 +22,20 @@
 		
 	<section id="main">
 		<h1>Kontakt oss</h1>
-		<p>Hvis du vil ta kontakt med oss kan du sende en <a href="mailto:nedreonlineslette@studntnu.onmicrosoft.com">e-post</a> til oss.</p>
+		<p>Hvis du vil ta kontakt med oss kan du sende en <a href="mailto:nedreonlineslette@studntnu.onmicrosoft.com">e-post</a> til oss. Du kan også fylle inn skjemaet under for å autogenerere en epost og sende den fra din standard mailklient</p>
+
+		<form id="contactForm">
+			<label><input id="title" type="text" placeholder="Emne"></label>
+			<textarea id="text" placeholder="Skriv inn din beskjed her..."></textarea>
+			<button type="button" id="send">Send</button>
+		</form>
+
 	</section>
+
+	<footer>
+		<img src="images/footer.jpg" alt="footer image">
+		<p>Nedre Onlineslette &copy; 2015</p>
+	</footer>
+	<script src="scripts/contactForm.js"></script>
 </body>
-<footer>
-<img src="images/footer.jpg" alt="footer image">
-<p>Nedre Onlineslette &copy; 2015</p>
-</footer>
 </html>
