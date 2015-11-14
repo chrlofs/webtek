@@ -9,16 +9,36 @@
 		<header id="header">
 			<img src="images/header.jpg" alt="header image">
 			<nav id="menu">
-				<ul>
-					<li><a href="index.html">Hjem</a> |</li>
-					<li><a href="kalender.html">Kalender</a> |</li>
-					<li><a href="grillene.html">Hvor er grillene?</a> |</li>
-					<li><a href="undergrupper.html">Undergrupper</a> |</li>
-					<li><a href="kart.html">Kart</a> |</li>
-					<li><a href="bli_med.html">Bli med</a> |</li>
-					<li><a href="om_oss.html">Om oss</a></li>
-				</ul>
-			</nav>
+			<ul>
+				<li><a href="index.html">Hjem</a> |</li>
+				<li><a href="kalender.html">Kalender</a> |</li>
+				<li><a href="grillene.html">Hvor er grillene?</a> |</li>
+
+
+				<li class="dropdown">
+					<a href="#">Undergrupper <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="#">Geocaching</a></li>
+						<li><a href="#">Flyttebyrå</a></li>
+						<li><a href="#">Ølbrygging</a></li>
+						<li><a href="#">Trening</a></li>
+					</ul>
+					|
+				</li>
+
+
+				<li><a href="kart.html">Kart</a> |</li>
+				<li><a href="bli_med.html">Bli med</a> |</li>
+				<li class="dropdown">
+					<a href="#">Om oss <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="#">Historien</a></li>
+						<li><a href="#">Om Nedre Singsaker</a></li>
+						<li><a href="#">Om Online</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 		</header>
 		<section id="main">
 			<h3>Trening</h3>
@@ -37,9 +57,10 @@
 				<li><a href="flyttebyraa.html">flyttebyrå</a></li>
 			</ul>
 		</section>
+		<footer>
+			<img src="images/footer.jpg" alt="footer image">
+			<p>Nedre Onlineslette &copy; 2015</p>
+		</footer>
+		<script src="scripts/dropdown.js"></script>
 	</body>
-	<footer>
-		<img src="images/footer.jpg" alt="footer image">
-		<p>Nedre Onlineslette &copy; 2015</p>
-	</footer>
 </html>
