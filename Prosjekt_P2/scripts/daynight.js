@@ -1,5 +1,5 @@
 /*
-	FILE NAME: scripts/footer.js
+	FILE NAME: scripts/daynight.js
 	WRITTEN BY: Christoffer Skar Lofsberg
 	WHEN: 15.11.2015
 	PURPOSE: Change color scheme at night
