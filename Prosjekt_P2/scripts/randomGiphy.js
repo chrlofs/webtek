@@ -4,7 +4,13 @@ gif.style.maxWidth = "250px"
 var randomGiphy = document.getElementById("randomGiphy")
 
 //Create a new XMLHttlRequest
-var xmlhttp = new XMLHttpRequest() 
+if(window.XMLHttpRequest) {
+	var xmlhttp = new XMLHttpRequest()	
+} else {
+	//IE6 & IE7
+	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+}
+ 
 //Empty string for a totally random gif, if searchWord you will get a gif related to that string
 var searchWord = ""
 var url = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=" + searchWord

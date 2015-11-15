@@ -4,7 +4,13 @@ var div = document.getElementById("weatherData")
 var url = "xml/yr.xml"
 
 //New XMLHttpRequest
-var xmlHttp = new XMLHttpRequest()
+if(window.XMLHttpRequest) {
+	var xmlHttp = new XMLHttpRequest()	
+} else {
+	//IE6 & IE7
+	var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP")
+}
+
 
 xmlHttp.open("get", url, true)
 xmlHttp.send()
