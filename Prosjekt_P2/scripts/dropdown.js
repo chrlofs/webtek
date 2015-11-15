@@ -1,3 +1,10 @@
+/*
+	FILE NAME: scripts/dropdown.js
+	WRITTEN BY: Christoffer Skar Lofsberg
+	WHEN: 05.11.2015
+	PURPOSE: Create dropdown menus
+*/
+
 //Selecting all elements with class dropdown
 var dropdowns = document.querySelectorAll(".dropdown")
 

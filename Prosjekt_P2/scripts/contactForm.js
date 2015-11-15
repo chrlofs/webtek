@@ -1,3 +1,10 @@
+/*
+	FILE NAME: scripts/contactForm.js
+	WRITTEN BY: Christoffer Skar Lofsberg
+	WHEN: 05.11.2015
+	PURPOSE: Validate contact form
+*/
+
 //Fetching elements from DOM
 var form = document.getElementById("contactForm")
 var titleInput = document.getElementById("title")
