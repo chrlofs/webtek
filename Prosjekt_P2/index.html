@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- 
+	FILE NAME: Prosjekt_P2/index.html
+	WRITTEN BY: Signe Elise Livgard
+	WHEN: October 2015
+	PURPOSE: first page and provide links to other sites
+-->
 <html>
 	<head>
 	<meta charset="UTF-8">
@@ -7,14 +13,16 @@
 
 	<body>
 		<header id="header">
+			<!-- header image -->
 		<img src="images/header.jpg" alt="header image" id="header-img">
 		<nav id="menu">
+			<!-- navigation menu -->
 			<ul>
 				<li><a href="index.html">Hjem</a> |</li>
 				<li><a href="kalender.html">Kalender</a> |</li>
 				<li><a href="grillene.html">Hvor er grillene?</a> |</li>
 
-
+				<!-- dropdown menu -->
 				<li class="dropdown">
 					<a href="#">Undergrupper <span class="downTri">&#9660;</span></a>
 					<ul>
@@ -42,25 +50,28 @@
 		</header>
 		
 	<section id="main">
+		<!-- about this page -->
 		<h3>Velkommen til Nedre Onlineslette</h3>
 		<p>Du har nå kommet til hjemmesiden til Nedre Onlineslette. Her bor det en rekke informatikkstudenter, og på disse sidene kan du finne informasjon som er av interesse for nåværende og kommende beboere. Dersom du lurer på hvor langt det er til idrettsbygget, når Bunnpris stenger, om Samfundet er åpent eller om noen skal trene i dag kan du finne det her. Dersom det er noe du savner må du gjerne ta kontakt.</p>
 
 	</section>
-
+	<!-- show random giphy -->
 	<section id = "extraContent">
 		<div id = "randomGiphy">
 			<h3>Random giphy</h3>
 		</div>
-
+		<!-- show weather data -->
 		<div id = "weatherData">
 			<h3 id="weatherHeader"></h3>
 		</div>
 	</section>
 
 	<footer>
+		<!-- footer image, changes picture during day/night -->
 		<img src="images/footer.jpg" alt="footer image" id="footer-img">
 		<p>Nedre Onlineslette &copy; 2015</p>
 	</footer>
+	<!-- scripts -->
 	<script src="scripts/dropdown.js"></script>
 	<script type="text/javascript" src="scripts/footer.js"></script>
 	<script src="scripts/weatherdata.js"></script>
