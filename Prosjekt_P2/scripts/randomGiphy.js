@@ -36,6 +36,7 @@ xmlhttp.onreadystatechange = function() {
 		//Get a fixed link holding a 200px width gif from the json data, set src on gif to this link
 		if(jsonObject["data"]) {
 			gif.src = jsonObject["data"]["image_url"]	
+			gif.alt = "A random gif"
 			//Appending the gif to site
 			randomGiphy.appendChild(gif)
 		} else {

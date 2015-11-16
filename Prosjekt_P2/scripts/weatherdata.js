@@ -66,6 +66,7 @@ xmlHttp.onreadystatechange = function() {
 		//Collect image and append it on div
 		var img = document.createElement("img")
 		img.src = weatherNow["symbol"]
+		img.alt = "A weather icon"
 		div.appendChild(img)
 		
 		//Create a new p element
