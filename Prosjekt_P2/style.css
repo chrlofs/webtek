@@ -1,5 +1,5 @@
 body {
-	/*bakgrunnen*/
+	/*background*/
 	background: #CCE1F2;
 	font-family: "Open Sans", helvetica, sans-serif;
 	margin-left: auto;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	/*topp*/
+	/*top of the page*/
     width: 100%;
     font-family: "Open Sans", helvetica, sans-serif;
     text-align: center;
@@ -16,11 +16,12 @@ header {
 }
 
 .downTri {
+    /*font size for the dropdown menu*/
     font-size: 10px;
 }
 
 #menu {
-	/*meny*/
+	/*navigation menu*/
 	padding-bottom: 10px;
     padding-top: 10px;
     background-color: #B1CEE6;
@@ -32,13 +33,14 @@ header {
 }
 
 #menu > ul {
-    /*menyliste*/
+    /*lists located in the navigation menu*/
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 #menu > ul > li {
+    /*elements located within the lists in the navigation menu*/
     display: inline;
     position: relative;
     padding-top: 10px;
@@ -46,24 +48,29 @@ header {
 }
 
 #menu a:link {
+    /*links located in the navigation menu*/
     padding: 10px;
     color: #000000;
 }
 
 #menu > ul > li > a:hover {
+    /* background color change when hovering links within the menu*/
     background-color: #CCE1F2;
 }
 
 #menu a:visited {
+    /*color change for visited links within the navigation menu*/
     color: #000000;
 }
 
 #mindre_overskrift {
+    /*font styling for sub titles*/
     font-weight: bold;
     font-size: 15px;
 }
 
 .dropdown > ul{
+    /*lists within the dorpdown menu*/
     position: absolute;
     list-style: none;
     display: none;
@@ -76,11 +83,13 @@ header {
 }
 
 .dropdown > ul > li {
+    /*list elements within the dropdown menu*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .dropLink:hover {
+    /*color change on hover for links within the dropdown menu*/
     color: #888 !important;
 }
 
@@ -89,7 +98,7 @@ hr {
 }
 
 #main {
-	/*hovedinhold*/
+	/*main portion of the text on each page*/
 	background: #FFFFFF;
     border: 1px transparent black;
 	font-family: "Open Sans", helvetica, sans-serif;
@@ -100,6 +109,7 @@ hr {
 }
 
 #main h3 {
+    /*titles used in the main portion of the page*/
     text-align: center;
 }
 
@@ -114,6 +124,7 @@ hr {
 }
 
 #randomGiphy {
+    /*positioning and styling for area showing random gifs on index.html*/
     background: #FFFFFF; 
     font-family: "Open Sans", helvetica, sans-serif;
     float: left;
@@ -125,11 +136,13 @@ hr {
 }
 
 #randomGiphy > img {
+    /*positioning for the random gifs window*/
     display: block;
     margin: 0 auto;
 }
 
 #weatherData {
+    /*positioning and styling for the area showing weather data on index.html*/
     background: #FFFFFF; 
     font-family: "Open Sans", helvetica, sans-serif;
     float: right;
@@ -141,6 +154,7 @@ hr {
 }
 
 #weatherData img {
+    /*resizing the weather icon*/
     margin-bottom: -5px;
 }
 
