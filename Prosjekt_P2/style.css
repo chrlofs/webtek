@@ -110,6 +110,7 @@ hr {
     width: 770px;
     padding: 0;
     display: block;
+    overflow: auto;
 }
 
 #randomGiphy {
