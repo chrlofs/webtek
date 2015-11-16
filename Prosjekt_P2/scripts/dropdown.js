@@ -12,11 +12,10 @@ var date = new Date()
 //Iterate over all dropdown elements
 for(var i = 0; i < dropdowns.length; i++) {
 	//Add eventlistener to each dropdown both mouseover and mouseout
-	var ul = dropdowns[i].getElementsByTagName("ul")[0]
-	var a = dropdowns[i].getElementsByTagName("a")[0]
 
 	dropdowns[i].addEventListener("mouseover", function(){
-
+		var a = this.getElementsByTagName("a")[0]
+		var ul = this.getElementsByTagName("ul")[0]
 		//Display the submenu at DOM, also change backgroundcolor at link object
 		ul.style.display = "block"
 		a.style.backgroundColor = "#CCE1F2"
@@ -29,6 +28,8 @@ for(var i = 0; i < dropdowns.length; i++) {
 
 	dropdowns[i].addEventListener("mouseout", function(){
 		//removing the submenu ul
+		var ul = this.getElementsByTagName("ul")[0]
+		var a = this.getElementsByTagName("a")[0]
 		ul.style.display = "none"
 		//Since we have daynight.js and therefore different colors as background on menu
 		//Set the background color at the link object back to its original state
