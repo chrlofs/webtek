@@ -1,5 +1,12 @@
+/*
+    Filename: final/style.css
+    Date Written: 14. October 2015
+    Author: Signe Elise Livgard, Kristoffer Hajem, Christoffer Skar Lofsberg, Vilde Mariussen
+    Purpose: Style for the site
+*/
+
 body {
-	/*bakgrunnen*/
+	/*background*/
 	background: #CCE1F2;
 	font-family: "Open Sans", helvetica, sans-serif;
 	margin-left: auto;
@@ -8,7 +15,7 @@ body {
 }
 
 header {
-	/*topp*/
+	/*top of the page*/
     width: 100%;
     font-family: "Open Sans", helvetica, sans-serif;
     text-align: center;
@@ -16,11 +23,12 @@ header {
 }
 
 .downTri {
+    /*font size for the dropdown menu*/
     font-size: 10px;
 }
 
 #menu {
-	/*meny*/
+	/*navigation menu*/
 	padding-bottom: 10px;
     padding-top: 10px;
     background-color: #B1CEE6;
@@ -32,13 +40,14 @@ header {
 }
 
 #menu > ul {
-    /*menyliste*/
+    /*lists nested in the navigation menu*/
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 #menu > ul > li {
+    /*elements nested within the lists in the navigation menu*/
     display: inline;
     position: relative;
     padding-top: 10px;
@@ -46,24 +55,29 @@ header {
 }
 
 #menu a:link {
+    /*links in the navigation menu*/
     padding: 10px;
     color: #000000;
 }
 
 #menu > ul > li > a:hover {
+    /* background color change when hovering links within the menu*/
     background-color: #CCE1F2;
 }
 
 #menu a:visited {
+    /*color change for visited links within the navigation menu*/
     color: #000000;
 }
 
 #mindre_overskrift {
+    /*font styling for sub titles*/
     font-weight: bold;
     font-size: 15px;
 }
 
 .dropdown > ul{
+    /*lists nested the dorpdown menu*/
     position: absolute;
     list-style: none;
     display: none;
@@ -76,20 +90,18 @@ header {
 }
 
 .dropdown > ul > li {
+    /*list elements within the dropdown menu*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .dropLink:hover {
+    /*color change on hover for links within the dropdown menu*/
     color: #888 !important;
 }
 
-hr {
-    margin: 5px;
-}
-
 #main {
-	/*hovedinhold*/
+	/*main portion of text on each page*/
 	background: #FFFFFF;
     border: 1px transparent black;
 	font-family: "Open Sans", helvetica, sans-serif;
@@ -100,20 +112,24 @@ hr {
 }
 
 #main h3 {
+    /*titles used in the main portion of the page*/
     text-align: center;
 }
 
 #extraContent {
+    /*shared container for random gif as well as weather data*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     width: 770px;
     padding: 0;
     display: block;
+    /*prevents displacement of the footer at certain screen heights*/
     overflow: auto;
 }
 
 #randomGiphy {
+    /*positioning and styling for area showing random gifs on index.html*/
     background: #FFFFFF; 
     font-family: "Open Sans", helvetica, sans-serif;
     float: left;
@@ -125,11 +141,13 @@ hr {
 }
 
 #randomGiphy > img {
+    /*positioning for the random gifs window*/
     display: block;
     margin: 0 auto;
 }
 
 #weatherData {
+    /*positioning and styling for the area showing weather data on index.html*/
     background: #FFFFFF; 
     font-family: "Open Sans", helvetica, sans-serif;
     float: right;
@@ -141,10 +159,12 @@ hr {
 }
 
 #weatherData img {
+    /*resizing the weather icon*/
     margin-bottom: -5px;
 }
 
 #contactForm input, #contactForm #text {
+    /*text area in the form in kontakt.html*/
     display: block;
     width: 400px;
     border: 1px solid #CCCCCC;
@@ -155,6 +175,7 @@ hr {
 }
 
 #send {
+    /*submit button in kontakt.html*/
     border: 1px solid #CCC;
     margin-left: 350px;
     width: 50px;
@@ -165,49 +186,46 @@ hr {
 }
 
 #contactForm #text {
+    /*prompt text in form text area*/
     height: 100px;
     resize: none;
     overflow-y: auto;
 }
 
-#groups > li {
-    display: inline;
-}
 iframe {
+    /*area showing the google calendar*/
     border: 0px;
 }
 
 a:link {
-	/*ubesøkt lenke*/
+	/*unvisited links*/
     color: #75ABE0;
     text-decoration: none;
 }
 
 a:visited {
-	/* besøkt lenke */
+	/*color change on visited links*/
     color: #75ABE0;
     text-decoration: none;
 }
 
 a:hover {
-	/*hovere over lenke*/
+	/*color change when hovering over links*/
     color: #66CCFF;
     text-decoration: none;
 }
 
 a:active {
-	/*valgt lenke*/
+	/*color change for link to current page*/
     color: #003366;
     text-decoration: none;
 }
 footer {
-	/*bunn*/
+	/*size and placement of footer*/
 	width: 100%;
 	font-size: 10px;
 	text-align: center;
 }
-
-/*GRILL*/
 
 .grill-form-input{ 
     /*Padding between comment box and Preferences*/
@@ -216,29 +234,29 @@ footer {
     text-align: left;
 }
 
-/*Position of submit and reset buttons*/
 .grill-form-actions{
+    /*Position of submit and reset buttons*/
     padding-top: 15px;
     text-align: center;
     
 }
 
-/*Register box*/
 .grill-btn{ 
+    /*Register box*/
     background-color: #CCE1F2;
     width: 60px;
     height: 25px;
 }
 
-/*Removes boxes around. When removed, size of legend header changes*/
 .grill-fieldset{ 
+    /*Removes boxes around. When removed, size of legend header changes*/
     border:none;
     border-bottom: solid 1px #CCE1F2;
     padding-bottom: 20px;
 }
 
-/*Header of each box*/
 .grill-legend{ 
+    /*Header of each box*/
     font-size: 15px;
     font-family: "Open Sans", helvetica, sans-serif;
     margin-left: -15px;
@@ -247,14 +265,14 @@ footer {
 
 }
 
-/*Size of location box*/
 .grill-textarea{ 
+    /*Size of location box*/
     display: block;
     border-radius: 1px;
 }
 
-/*Font, size, padding of label to input boxes*/
 .input-label{
+    /*Font, size, padding of label to input boxes*/
     font-size: 15px;
     font-family: "Open Sans", helvetica, sans-serif;
     margin-left: -10px;
@@ -262,5 +280,6 @@ footer {
 }
 
 .grill-input{
+    /*input areas in grillene.html*/
     margin-left: 10px;
 }
