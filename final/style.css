@@ -206,3 +206,61 @@ footer {
 	font-size: 10px;
 	text-align: center;
 }
+
+/*GRILL*/
+
+.grill-form-input{ 
+    /*Padding between comment box and Preferences*/
+    padding-bottom: 5px;
+    /*Position of input boxes*/
+    text-align: left;
+}
+
+/*Position of submit and reset buttons*/
+.grill-form-actions{
+    padding-top: 15px;
+    text-align: center;
+    
+}
+
+/*Register box*/
+.grill-btn{ 
+    background-color: #CCE1F2;
+    width: 60px;
+    height: 25px;
+}
+
+/*Removes boxes around. When removed, size of legend header changes*/
+.grill-fieldset{ 
+    border:none;
+    border-bottom: solid 1px #CCE1F2;
+    padding-bottom: 20px;
+}
+
+/*Header of each box*/
+.grill-legend{ 
+    font-size: 15px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    margin-left: -15px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+/*Size of location box*/
+.grill-textarea{ 
+    display: block;
+    border-radius: 1px;
+}
+
+/*Font, size, padding of label to input boxes*/
+.input-label{
+    font-size: 15px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    margin-left: -10px;
+    padding: 5px;
+}
+
+.grill-input{
+    margin-left: 10px;
+}
