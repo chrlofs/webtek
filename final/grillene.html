@@ -11,8 +11,7 @@ PURPOSE: describe the whereabouts and booking of the grills owned by Nedre Onlin
 	<title>Nedre Onlineslette</title>
 
 	<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="grillStyle.css">
-
+        
 	</head>
 
 
@@ -67,53 +66,53 @@ PURPOSE: describe the whereabouts and booking of the grills owned by Nedre Onlin
 
 			<!-- form for the grill Aune Sand -->
 				<form action="MAILTO:nedreonlineslette@studntnu.onmicrosoft.com?subject=Hvem%20har%20Aune%20Sand?" method="post" enctype="text/plain">
-					<fieldset>
-					<legend>Hvem har Aune Sand?</legend>
+					<fieldset class="grill-fieldset">
+					<legend class="grill-legend">Hvem har Aune Sand?</legend>
 
 						<!-- Form input for name (person currently in charge of Aune Sand) -->
-					<div class="form-input">
+					<div class="grill-form-input">
 					<label class="input-label">Navn</label>
-					<input name="Navn" type="text" placeholder="Navn" required>
+					<input name="Navn" type="text" placeholder="Navn" required class="grill-input">
 					</div>
 
 						<!-- form input for phone number -->
-					<div class="form-input">
+					<div class="grill-form-input">
 						<label class="input-label">Telefon</label>
-						<input name="Telefon" type="text" placeholder=" e.g +47 81549300" required>
+						<input name="Telefon" type="text" placeholder=" e.g +47 81549300" required class="grill-input">
 					</div>
 					</fieldset>
 
-					<fieldset>
+					<fieldset class="grill-fieldset">
 						<!-- submit og reset button for information regarding the whereabouts of the grill -->
-					<div class="form-actions">
-						<input type="submit" class="btn" value="Send">
-						<input type="reset" class="btn" value="Reset">
+					<div class="grill-form-actions">
+						<input type="submit" class="grill-btn" value="Send" class="grill-input">
+						<input type="reset" class="grill-btn" value="Reset" class="grill-input">
     				</div>
 						</fieldset>
 				</form>
 
 					<!-- form for the grill Jordbærmus -->
 				<form action="MAILTO:nedreonlineslette@studntnu.onmicrosoft.com?subject=Hvem%20har%20Jordbærmus?" method="post" enctype="text/plain">
-					<fieldset>
-					<legend>Hvem har Jordbærmus?</legend>
+					<fieldset class="grill-fieldset">
+					<legend class="grill-legend">Hvem har Jordbærmus?</legend>
 
 						<!-- form input for name (person currently in charge of Jordbærmus) -->
-					<div class="form-input">
+					<div class="grill-form-input">
 					<label class="input-label">Navn</label>
-					<input name="Navn" type="text" placeholder="Navn" required>
+					<input name="Navn" type="text" placeholder="Navn" required class="grill-input">
 					</div>
 
 						<!-- form input for phone number -->
-					<div class="form-input">
+					<div class="grill-form-input">
 						<label class="input-label">Telefon</label>
-						<input name="Telefon" type="text" placeholder=" e.g +47 81549300" required>
+						<input name="Telefon" type="text" placeholder=" e.g +47 81549300" required class="grill-input">
 					</div>
-					</fieldset>
+					</fieldset class="grill-fieldset">
 						<!-- submit og reset button for information regarding the whereabouts of the grill -->
-						<fieldset>
-					<div class="form-actions">
-						<input type="submit" class="btn" value="Send">
-						<input type="reset" class="btn" value="Reset">
+						<fieldset class="grill-fieldset">
+					<div class="grill-form-actions">
+						<input type="submit" class="grill-btn" value="Send" class="grill-input">
+						<input type="reset" class="grill-btn" value="Reset" class="grill-input">
     				</div>
 						</fieldset>
 
@@ -122,54 +121,54 @@ PURPOSE: describe the whereabouts and booking of the grills owned by Nedre Onlin
 			<!-- form for booking of the grills via mail -->
 			<h3>Booking av grillene</h3>
 				<form action="MAILTO:nedreonlineslette@studntnu.onmicrosoft.com?subject=Booking%20av%20grill" method="post" enctype="text/plain">
-					<fieldset>
-					<legend>Hvem ønsker å bruke grillen?</legend>
+					<fieldset class="grill-fieldset">
+					<legend class="grill-legend">Hvem ønsker å bruke grillen?</legend>
 
 						<!-- form input for name (person who wish to book a grill) -->
-					<div class="form-input">
+					<div class="grill-form-input">
 					<label class="input-label">Navn</label>
-					<input name="Navn" type="text" placeholder="Navn" required>
+					<input name="Navn" type="text" placeholder="Navn" required class="grill-input">
 					</div>
 
 						<!-- form input for phone number -->
-					<div class="form-input">
+					<div class="grill-form-input">
 						<label class="input-label">Telefon</label>
-						<input name="Telefon" type="text" placeholder=" e.g +47 81549300" required>
+						<input name="Telefon" type="text" placeholder=" e.g +47 81549300" required class="grill-input">
 					</div>
 					</fieldset>
 
-					<fieldset>
-					<legend>Når ønsker du grillen?</legend>
+					<fieldset class="grill-fieldset">
+					<legend class="grill-legend">Når ønsker du grillen?</legend>
 
 						<!-- form input for date person wishes to book a grill -->
-					<div class="form-input">
+					<div class="grill-form-input">
 						<label class="input-label">Dato (mm/dd/yyyy)</label>
-						<input name="Dato" type="date" required>
+						<input name="Dato" type="date" required class="grill-input">
 					</div>
 					</fieldset>
 
 						<!-- form input for location of the grill -->
-					<fieldset>
-						<legend>Hvor skal du ta med grillen?</legend>
-						<div class="form-input">
+					<fieldset class="grill-fieldset">
+						<legend class="grill-legend">Hvor skal du ta med grillen?</legend>
+						<div class="grill-form-input">
 						<label class="input-label"></label>
-						<textarea name="Lokasjon" rows=3 cols=40 placeholder="Hvor skal du?" required></textarea>
+						<textarea name="Lokasjon" rows=3 cols=40 placeholder="Hvor skal du?" required class="grill-textarea"></textarea>
 						</div>
 					</fieldset>
 
 						<!-- form input for grill request -->
-					<fieldset>
-						<legend>Hvilken grill ønsker du?</legend>
-						<div class="form-input">
+					<fieldset class="grill-fieldset">
+						<legend class="grill-legend">Hvilken grill ønsker du?</legend>
+						<div class="grill-form-input">
 						<label class="input-label"></label>
-						<textarea name="Lokasjon" rows=3 cols=40 placeholder="Ønsket grill" required></textarea>
+						<textarea name="Lokasjon" rows=3 cols=40 placeholder="Ønsket grill" required  class="grill-textarea"></textarea>
 						</div>
 					</fieldset>
 
 					<!-- submit og reset buttons for booking form for the grills -->
-					<div class="form-actions">
-						<input type="submit" class="btn" value="Send">
-						<input type="reset" class="btn" value="Reset">
+					<div class="grill-form-actions">
+						<input type="submit" class="grill-btn" value="Send" class="grill-input">
+						<input type="reset" class="grill-btn" value="Reset" class="grill-input">
     				</div>
 				</form>
 		</section>
