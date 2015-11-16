@@ -109,6 +109,7 @@ hr {
     margin-top: 10px;
     width: 770px;
     padding: 0;
+    display: block;
 }
 
 #randomGiphy {
