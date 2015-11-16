@@ -10,7 +10,7 @@ PURPOSE: describe the whereabouts and booking of the grills owned by Nedre Onlin
 	<meta charset="UTF-8">
 	<title>Nedre Onlineslette</title>
 
-	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="grillStyle.css">
 
 	</head>
@@ -18,18 +18,37 @@ PURPOSE: describe the whereabouts and booking of the grills owned by Nedre Onlin
 
 	<body>
 		<header id="header">
-		<img src="images/header.jpg" alt="header image">
+		<img src="images/header.jpg" alt="header image" id="header-img">
 		<nav id="menu">
-
-			<!-- menu for webpag e-->
+			<!-- navigation menu -->
 			<ul>
-				<li><a href="index.html">Hjem</a> |</li>
-				<li><a href="kalender.html">Kalender</a> |</li>
-				<li><a href="grillene.html">Hvor er grillene?</a> |</li>
-				<li><a href="undergrupper.html">Undergrupper</a> |</li>
-				<li><a href="kart.html">Kart</a> |</li>
-				<li><a href="bli_med.html">Bli med</a> |</li>
-				<li><a href="om_oss.html">Om oss</a></li>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kalender.html">Kalender</a></li>
+				<li><a href="grillene.html">Hvor er grillene?</a></li>
+
+				<!-- dropdown menu -->
+				<li class="dropdown">
+					<a href="#">Undergrupper <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="geocaching.html" class="dropLink">Geocaching</a></li>
+						<li><a href="flyttebyraa.html" class="dropLink">Flyttebyrå</a></li>
+						<li><a href="olbrygging.html" class="dropLink">Ølbrygging</a></li>
+						<li><a href="trening.html" class="dropLink">Trening</a></li>
+					</ul>
+				</li>
+
+
+				<li><a href="kart.html">Kart</a></li>
+				<li><a href="bli_med.html">Bli med</a></li>
+				<li class="dropdown">
+					<a href="#">Om <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="om_oss.html" class="dropLink">Om oss</a></li>
+						<li><a href="historien.html" class="dropLink">Historien</a></li>
+						<li><a href="singsaker.html" class="dropLink">Om Nedre Singsaker</a></li>
+						<li><a href="om_online.html" class="dropLink">Om Online</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		</header>
@@ -157,9 +176,11 @@ PURPOSE: describe the whereabouts and booking of the grills owned by Nedre Onlin
 
 	<!-- footer image, changes picture during day/night -->
 	<footer>
-		<img src="images/footer.jpg" alt="footer image">
+		<img src="images/footer.jpg" alt="footer image" id="footer-img">
 		<p>Nedre Onlineslette &copy; 2015</p>
 	</footer>
 
+	<script type="text/javascript" src="scripts/dropdown.js"></script>
+	<script type="text/javascript" src="scripts/daynight.js"></script>
 	</body>
 </html>
