@@ -283,3 +283,11 @@ footer {
     /*input areas in grillene.html*/
     margin-left: 10px;
 }
+
+#calendar {
+    border-width: 0;
+    width: 750px; 
+    height: 600px; 
+    frameborder: 0;
+    scrolling:no; 
+}
