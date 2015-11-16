@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+FILE NAME: Prosjekt_P2\geocaching.html
+
+WRITTEN BY: Kristoffer Hajem
+
+WHEN: October 2015
+
+PURPOSE: provide information about geocaching in general and links to our geocaching profiles
+
+-->
+	<head>
+		<meta charset="UTF-8">
+		<title>Geocaching</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header id="header">
+			<!-- header image -->
+		<img src="images/header.jpg" alt="header image" id="header-img">
+
+		</header>
+		<nav id="menu">
+			<!-- navigation menu -->
+			<ul>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kalender.html">Kalender</a></li>
+				<li><a href="grillene.html">Hvor er grillene?</a></li>
+
+				<!-- dropdown menu -->
+				<li class="dropdown">
+				<!--Drop down menu for navigating sub pages with a common theme-->
+					<a href="#">Undergrupper <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="geocaching.html" class="dropLink">Geocaching</a></li>
+						<li><a href="flyttebyraa.html" class="dropLink">Flyttebyrå</a></li>
+						<li><a href="olbrygging.html" class="dropLink">Ølbrygging</a></li>
+						<li><a href="trening.html" class="dropLink">Trening</a></li>
+					</ul>
+				</li>
+
+
+				<li><a href="kart.html">Kart</a></li>
+				<li><a href="bli_med.html">Bli med</a></li>
+				<li class="dropdown">
+				<!--Drop down menu for navigating sub pages with a common theme-->
+					<a href="#">Om <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="om_oss.html" class="dropLink">Om oss</a></li>
+						<li><a href="historien.html" class="dropLink">Historien</a></li>
+						<li><a href="singsaker.html" class="dropLink">Om Nedre Singsaker</a></li>
+						<li><a href="om_online.html" class="dropLink">Om Online</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<section id="main">
+		<!--Main portion of the informative text describing geocaching-->
+			<h3>Geocaching</h3>
+			<p>På nedre Onlineslette er vi en gjeng som driver med geocaching. Geocaching kan beskrives som en skattejakt, der man må lete etter ulike kapsler som er skjult rundt omkring over hele verdenen. I gjengen vår er det både erfarende og nye som driver med dette. I tillegg har vi også startet en nodekomié i linjeforeningen Online, som heter cacheKom, for geocachere på Informatikk. Oversikt over når vi skal geocache kan finnes på kalenderen vår.<p>
+
+			<p>Under kan du finne linker til våre geocachingprofiler, og for mer informasjon om geocaching kan du gå inn på <a href="https://www.geocaching.com/">Geocaching sin hjemmeside</a></p>
+
+			<ul id="cachers">
+			<!--List containing names, user names, and links to the geocachers at Nedre Onlineslette-->
+				<li><a href="http://www.geocaching.com/profile/?guid=2f773c13-e657-4e82-a3da-182e8f54ff73">Signe "signii" Livgard</a></li>
+				<li><a href="http://www.geocaching.com/profile/?guid=7f3ae206-e1e8-4335-8cee-15f3eb97e7e0">Christoffer "chrlofs" Lofsberg</a></li>
+				<li><a href="http://www.geocaching.com/profile/?guid=20f541c8-c017-4b47-9b35-1f5a65be0437">Erik "MrWi" Wiker</a></li>
+				<li><a href="http://www.geocaching.com/profile/?guid=d523c799-6561-4e21-abf1-e9d9b1359f3a">Kristoffer "hajeem" Hajem</a></li>
+				<li><a href="http://www.geocaching.com/profile/?guid=5685a90a-d6d7-47d7-956e-c06d73541a87">Camilla "tranebear" Tran</a></li>
+			</ul>
+
+
+		</section>
+		<footer>
+			<!-- footer image, changes picture during day/night -->
+			<img src="images/footer.jpg" alt="footer image" id="footer-img">
+			<p>Nedre Onlineslette &copy; 2015</p>
+		</footer>
+		<script type="text/javascript" src="scripts/dropdown.js"></script>
+		<script type="text/javascript" src="scripts/daynight.js"></script>
+	</body>
+</html>

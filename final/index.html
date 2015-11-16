@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+	FILE NAME: Prosjekt_P2/index.html
+	WRITTEN BY: Signe Elise Livgard
+	WHEN: October 2015
+	PURPOSE: first page and provide links to other sites
+-->
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Nedre Onlineslette</title>
+	<link rel="stylesheet" href="style.css"></head>
+
+	<body>
+		<header id="header">
+			<!-- header image -->
+		<img src="images/header.jpg" alt="header image" id="header-img">
+
+		</header>
+		<nav id="menu">
+			<!-- navigation menu -->
+			<ul>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kalender.html">Kalender</a></li>
+				<li><a href="grillene.html">Hvor er grillene?</a></li>
+
+				<!-- dropdown menu -->
+				<li class="dropdown">
+					<a href="#">Undergrupper <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="geocaching.html" class="dropLink">Geocaching</a></li>
+						<li><a href="flyttebyraa.html" class="dropLink">Flyttebyrå</a></li>
+						<li><a href="olbrygging.html" class="dropLink">Ølbrygging</a></li>
+						<li><a href="trening.html" class="dropLink">Trening</a></li>
+					</ul>
+				</li>
+
+
+				<li><a href="kart.html">Kart</a></li>
+				<li><a href="bli_med.html">Bli med</a></li>
+				<li class="dropdown">
+					<a href="#">Om <span class="downTri">&#9660;</span></a>
+					<ul>
+						<li><a href="om_oss.html" class="dropLink">Om oss</a></li>
+						<li><a href="historien.html" class="dropLink">Historien</a></li>
+						<li><a href="singsaker.html" class="dropLink">Om Nedre Singsaker</a></li>
+						<li><a href="om_online.html" class="dropLink">Om Online</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+	<section id="main">
+		<!-- about this page -->
+		<h3>Velkommen til Nedre Onlineslette</h3>
+		<p>Du har nå kommet til hjemmesiden til Nedre Onlineslette. Her bor det en rekke informatikkstudenter, og på disse sidene kan du finne informasjon som er av interesse for nåværende og kommende beboere. Dersom du lurer på hvor langt det er til idrettsbygget, når Bunnpris stenger, om Samfundet er åpent eller om noen skal trene i dag kan du finne det her. Dersom det er noe du savner må du gjerne ta kontakt.</p>
+
+	</section>
+	<!-- show random giphy -->
+	<section id = "extraContent">
+		<div id = "randomGiphy">
+			<h3>Random giphy</h3>
+		</div>
+		<!-- show weather data -->
+		<div id = "weatherData">
+			<h3 id="weatherHeader">Kan ikke hente værdata</h3>
+		</div>
+	</section>
+
+	<footer>
+		<!-- footer image, changes picture during day/night -->
+		<img src="images/footer.jpg" alt="footer image" id="footer-img">
+		<p>Nedre Onlineslette &copy; 2015</p>
+	</footer>
+	<!-- scripts -->
+	<script type="text/javascript" src="scripts/dropdown.js"></script>
+	<script type="text/javascript" src="scripts/daynight.js"></script>
+	<script type="text/javascript" src="scripts/weatherdata.js"></script>
+	<script type="text/javascript" src="scripts/randomGiphy.js"></script>
+</body>
+
+</html>
+
