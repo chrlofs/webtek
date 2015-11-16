@@ -173,6 +173,9 @@ hr {
 #groups > li {
     display: inline;
 }
+iframe {
+    border-right: 0px;
+}
 
 a:link {
 	/*ubesøkt lenke*/
