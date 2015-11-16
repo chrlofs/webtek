@@ -1,3 +1,10 @@
+/*
+	FILE NAME: scripts/randomGiphy.js
+	WRITTEN BY: Christoffer Skar Lofsberg
+	WHEN: 04.11.2015
+	PURPOSE: Display a random gif at index
+*/
+
 //Creating a new image object and fetching the randomgiphy element from HTML 
 var gif = new Image
 gif.style.maxWidth = "250px"

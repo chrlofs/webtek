@@ -1,3 +1,10 @@
+/*
+	FILE NAME: scripts/contactForm.js
+	WRITTEN BY: Christoffer Skar Lofsberg
+	WHEN: 10.11.2015
+	PURPOSE: Display current weather at index
+*/
+
 var div = document.getElementById("weatherData")
 //You can use the yr api xml like http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Studentersamfundet/varsel.xml
 //Due to access permissions, we has downloaded one xml file locally

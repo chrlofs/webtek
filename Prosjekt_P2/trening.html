@@ -18,43 +18,45 @@ PURPOSE: provide information regarding when and where the group goes to the gym
 	</head>
 	<body>
 		<header id="header">
-		<!--Header containing header image and menu for navigating the site-->
-			<img src="images/header.jpg" alt="header image">
-			<nav id="menu">
-			<!--main menu for navigating the site-->
+		<!-- header image -->
+		<img src="images/header.jpg" alt="header image" id="header-img">
+
+		</header>
+		<nav id="menu">
+			<!-- navigation menu -->
 			<ul>
-				<li><a href="index.html">Hjem</a> |</li>
-				<li><a href="kalender.html">Kalender</a> |</li>
-				<li><a href="grillene.html">Hvor er grillene?</a> |</li>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kalender.html">Kalender</a></li>
+				<li><a href="grillene.html">Hvor er grillene?</a></li>
 
-
+				<!-- dropdown menu -->
 				<li class="dropdown">
 				<!--Drop down menu for navigating sub pages with a common theme-->
 					<a href="#">Undergrupper <span class="downTri">&#9660;</span></a>
 					<ul>
-						<li><a href="#">Geocaching</a></li>
-						<li><a href="#">Flyttebyrå</a></li>
-						<li><a href="#">Ølbrygging</a></li>
-						<li><a href="#">Trening</a></li>
+						<li><a href="geocaching.html" class="dropLink">Geocaching</a></li>
+						<li><a href="flyttebyraa.html" class="dropLink">Flyttebyrå</a></li>
+						<li><a href="olbrygging.html" class="dropLink">Ølbrygging</a></li>
+						<li><a href="trening.html" class="dropLink">Trening</a></li>
 					</ul>
-					|
 				</li>
 
 
-				<li><a href="kart.html">Kart</a> |</li>
-				<li><a href="bli_med.html">Bli med</a> |</li>
+				<li><a href="kart.html">Kart</a></li>
+				<li><a href="bli_med.html">Bli med</a></li>
 				<li class="dropdown">
 				<!--Drop down menu for navigating sub pages with a common theme-->
-					<a href="#">Om oss <span class="downTri">&#9660;</span></a>
+
+					<a href="#">Om <span class="downTri">&#9660;</span></a>
 					<ul>
-						<li><a href="#">Historien</a></li>
-						<li><a href="#">Om Nedre Singsaker</a></li>
-						<li><a href="#">Om Online</a></li>
+						<li><a href="om_oss.html" class="dropLink">Om oss</a></li>
+						<li><a href="historien.html" class="dropLink">Historien</a></li>
+						<li><a href="singsaker.html" class="dropLink">Om Nedre Singsaker</a></li>
+						<li><a href="om_online" class="dropLink">Om Online</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
-		</header>
 
 		<section id="main">
 		<!--Main portion of the informative text describing when and where the group goes to the gym-->
@@ -66,10 +68,11 @@ PURPOSE: provide information regarding when and where the group goes to the gym
 			<p>Treningstider avtales som oftest på vår kanal på Slack.</p>
 		</section>
 		<footer>
-		<!--Footer containing the footer image-->
-			<img src="images/footer.jpg" alt="footer image">
+			<!-- footer image, changes picture during day/night -->
+			<img src="images/footer.jpg" alt="footer image" id="footer-img">
 			<p>Nedre Onlineslette &copy; 2015</p>
 		</footer>
-		<script src="scripts/dropdown.js"></script>
+		<script type="text/javascript" src="scripts/dropdown.js"></script>
+		<script type="text/javascript" src="scripts/daynight.js"></script>
 	</body>
 </html>

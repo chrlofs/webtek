@@ -1,65 +1,77 @@
 <!DOCTYPE html>
+<!-- 
+	FILE NAME: Prosjekt_P2/bli_med.html
+	WRITTEN BY: Signe Elise Livgard
+	WHEN: October 2015
+	PURPOSE: give information about how to contact us
+-->
 <html>
 	<head>
 	<meta charset="UTF-8">
 	<title>Nedre Onlineslette</title>
 	<link rel="stylesheet" href="style.css"></head>
 
-	<body>
-		<header id="header">
+	<header id="header">
+			<!-- header image -->
+		<img src="images/header.jpg" alt="header image" id="header-img">
+
+		</header>
 		<nav id="menu">
+			<!-- navigation menu -->
 			<ul>
-				<li><a href="index.html">Hjem</a> |</li>
-				<li><a href="kalender.html">Kalender</a> |</li>
-				<li><a href="grillene.html">Hvor er grillene?</a> |</li>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kalender.html">Kalender</a></li>
+				<li><a href="grillene.html">Hvor er grillene?</a></li>
 
-
+				<!-- dropdown menu -->
 				<li class="dropdown">
 					<a href="#">Undergrupper <span class="downTri">&#9660;</span></a>
 					<ul>
-						<li><a href="#">Geocaching</a></li>
-						<li><a href="#">Flyttebyrå</a></li>
-						<li><a href="#">Ølbrygging</a></li>
-						<li><a href="#">Trening</a></li>
+						<li><a href="geocaching.html" class="dropLink">Geocaching</a></li>
+						<li><a href="flyttebyraa.html" class="dropLink">Flyttebyrå</a></li>
+						<li><a href="olbrygging.html" class="dropLink">Ølbrygging</a></li>
+						<li><a href="trening.html" class="dropLink">Trening</a></li>
 					</ul>
-					|
 				</li>
 
 
-				<li><a href="kart.html">Kart</a> |</li>
-				<li><a href="bli_med.html">Bli med</a> |</li>
+				<li><a href="kart.html">Kart</a></li>
+				<li><a href="bli_med.html">Bli med</a></li>
 				<li class="dropdown">
-					<a href="#">Om oss <span class="downTri">&#9660;</span></a>
+					<a href="#">Om <span class="downTri">&#9660;</span></a>
 					<ul>
-						<li><a href="#">Historien</a></li>
-						<li><a href="#">Om Nedre Singsaker</a></li>
-						<li><a href="#">Om Online</a></li>
+						<li><a href="om_oss.html" class="dropLink">Om oss</a></li>
+						<li><a href="historien.html" class="dropLink">Historien</a></li>
+						<li><a href="singsaker.html" class="dropLink">Om Nedre Singsaker</a></li>
+						<li><a href="om_online" class="dropLink">Om Online</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
-		</header>
 		
 	<section id="main">
+		<!-- information about how to be a part of the club -->
 		<h3>Vil du bli med i Nedre Onlineslette?</h3>
 		<p>Alle beboere på Nedre Singsakerslette studentby kan bli med i Nedre Onlineslette, hvis de er informatikere på NTNU. Har du lyst til å bli en del av oss? Da må du søke om hybel på Nedre Singsakerslette gjennom boligtorget til Studentsamskipnaden i Trondheim. Er du heldig kan du bli anbefalt inn gjennom en av oss som allerede bor her. Ta kontakt.
 		</p>
 		
+		<!-- navigation to pages -->
 		<table style="width:100%">
 		  <tr>
 		    <td align="center"><a href="https://www.boligtorget.no/sit/housing/Boligomrade/14"><h4>Boligtorget</h4></a></td>
 		    <td align="center"><a href="kontakt.html"><h4>Kontakt oss</h4></a></td>		
 		  </tr>
 		</table>
-		
-		
 	
 	</section>
-</body>
-		<footer>
-			<img src="images/footer.jpg" alt="footer image">
-			<p>Nedre Onlineslette &copy; 2015</p>
-		</footer>
-		<script src="scripts/dropdown.js"></script>
+
+	<footer>
+		<!-- footer image, changes picture during day/night -->
+		<img src="images/footer.jpg" alt="footer image" id="footer-img">
+		<p>Nedre Onlineslette &copy; 2015</p>
+	</footer>
+		<!-- scripts -->
+	<script type="text/javascript" src="scripts/dropdown.js"></script>
+	<script type="text/javascript" src="scripts/daynight.js"></script>
 	</body>
 </html>
